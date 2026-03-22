@@ -1,0 +1,9 @@
+<layer_2_bridge>
+    <ambiguity_detected>True</ambiguity_detected>
+    <input_term>"Kill the process"</input_term>
+    <forcing_operator intent="TECHNICAL">
+        ERROR: Semantic superposition detected.
+        ACTION: Collapse wavefunction using Context="Computing".
+        CONSTRAINT: Output must be executable code or CLI command.
+    </forcing_operator>
+</layer_2_bridge>
