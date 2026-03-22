@@ -52,7 +52,7 @@ To use this protocol in a real environment, you need to customize the following 
 The current sentinel uses a dummy VectorEngine for demonstration purposes.
  * Action Required: Replace the get_embedding function with an actual Embedding API call (e.g., text-embedding-3-small from OpenAI, or a local sentence-transformers model).
  * How:
-   # Replace this:
+# Replace this:
 def get_embedding(self, text: str) -> np.ndarray:
     vec = np.random.randn(768) # Dummy simulation
     return vec / np.linalg.norm(vec)
