@@ -1,0 +1,2 @@
+# The SmartGuard Protocol - Adaptive Sentinel Dependencies
+numpy>=1.20.0
