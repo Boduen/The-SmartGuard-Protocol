@@ -1,8 +1,8 @@
-The SmartGuard Protocol
+#The SmartGuard Protocol
 A Unified Framework for Safe and Decisive AI Architecture.
 This repository contains a generalized, foundational implementation of the SmartGuard Protocol, a dual-layer architectural intervention designed to prevent recursive logical instability (prompt injections/jailbreaks) and decision paralysis in Large Language Models (LLMs).
 Unlike traditional alignment methods (like RLHF) that act as probabilistic post-filters, SmartGuard introduces a deterministic "Physics of Safety" by separating user inputs from system commands and forcing decisions during ambiguous states.
-Disclaimer: Generalized Version
+##Disclaimer: Generalized Version
 This repository provides a generalized, template-based demonstration of the SmartGuard concepts. The provided Python code uses simulated vector embeddings (random noise) and zero-shot keyword matching to demonstrate the logic flow without requiring external API keys. It is not ready for plug-and-play production use. You must customize the infrastructure layer with real embedding models and classification logic before deploying.
 Core Architecture
 SmartGuard operates on two distinct layers:
