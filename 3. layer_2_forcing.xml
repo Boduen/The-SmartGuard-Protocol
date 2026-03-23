@@ -1,9 +1,0 @@
-<layer_2_bridge>
-    <ambiguity_detected>True</ambiguity_detected>
-    <input_term>"Kill the process"</input_term>
-    <forcing_operator intent="TECHNICAL">
-        ERROR: Ambiguous context detected.
-        ACTION: Resolve ambiguity by forcing Context="Computing".
-        CONSTRAINT: Output must be executable code or CLI command.
-    </forcing_operator>
-</layer_2_bridge>
