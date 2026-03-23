@@ -35,10 +35,6 @@ SmartGuard operates on two distinct layers:
 
 ## Getting Started
 
- * Clone the repository:
-   git clone https://github.com/yourusername/smartguard-protocol.git
-cd smartguard-protocol
-
  * Install the basic requirements:
    pip install -r requirements.txt
 
