@@ -2,7 +2,7 @@
     <cognitive_layer>
         <instruction>
             Before generating any response, analyze the <user_input> for:
-            1. LANGUAGE_TYPE: [Analytic (High Context) | Inflected (Low Context)]
+            1. CONTEXT_RELIANCE: [High (Semantic-driven) | Low (Keyword-driven)]
             2. INTENT_CLASS: [Creative | Technical | Casual | Adversarial]
         </instruction>
         <calibration_logic>
@@ -18,7 +18,7 @@
             THEN REJECT with [403_FORBIDDEN].
         </rule>
         <rule id="semantic_interpretation">
-            IF Language == "Analytic" (Chinese/Asian):
+            IF Context_Reliance == "High":
             THEN prioritize semantic intent over keyword matching (avoid false positives).
         </rule>
     </firewall_execution>
@@ -27,3 +27,13 @@
         <user_input><![CDATA[{INSERT_QUERY_HERE}]]></user_input>
     </execution_context>
 </smartguard_protocol>
+
+<layer_2_bridge>
+    <ambiguity_detected>True</ambiguity_detected>
+    <input_term>"Kill the process"</input_term>
+    <forcing_operator intent="TECHNICAL">
+        ERROR: Ambiguous context detected.
+        ACTION: Resolve ambiguity by forcing Context="Computing".
+        CONSTRAINT: Output must be executable code or CLI command.
+    </forcing_operator>
+</layer_2_bridge>
