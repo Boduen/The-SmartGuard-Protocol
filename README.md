@@ -1,4 +1,4 @@
-#The SmartGuard Protocol
+# The SmartGuard Protocol
 
 A Unified Framework for Safe and Decisive AI Architecture.
 
@@ -8,13 +8,13 @@ Unlike traditional alignment methods (like RLHF) that act as probabilistic post-
 
 ---
 
-##Disclaimer: Generalized Version
+## Disclaimer: Generalized Version
 
 This repository provides a generalized, template-based demonstration of the SmartGuard concepts. The provided Python code uses simulated vector embeddings (random noise) and zero-shot keyword matching to demonstrate the logic flow without requiring external API keys. It is not ready for plug-and-play production use. You must customize the infrastructure layer with real embedding models and classification logic before deploying.
 
 ---
 
-##Core Architecture
+## Core Architecture
 
 SmartGuard operates on two distinct layers:
 
@@ -25,7 +25,7 @@ SmartGuard operates on two distinct layers:
 
 ---
 
-##Repository Structure
+## Repository Structure
 
  * smartguard_protocol.xml: The unified Track A "Cognitive" System Prompt. It encapsulates the user input, forces the LLM to classify intent before execution, and includes the integrated <layer_2_bridge> module for ambiguity resolution.
  * adaptive_sentinel.py: The Track B "Adaptive Sentinel" (Enterprise Edition). A Python module that dynamically calculates risk using semantic vectors, keyword triggers, and Context Reliance (High vs. Low Context).
@@ -33,7 +33,7 @@ SmartGuard operates on two distinct layers:
 
 ---
 
-##Getting Started
+## Getting Started
 
  * Clone the repository:
    git clone https://github.com/yourusername/smartguard-protocol.git
